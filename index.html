@@ -1,24 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Page Title</title>
+    <title>Crystal collector game</title>
     <link rel="stylesheet" type="styles.css" media="screen" href="main.css">
-    <script src="javascript,/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="/assets/javascript/game.js"></script> -->
 </head>
+
 <body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: orange; color:aliceblue">
+            <div class="container">
+                <h1 class="display-4">
+                    <div class="text-center"><strong> Crystal Collector
+                </h1>
+            </div> </strong>
+        </div>
 
-    <p id="result"></p>
 
-    <div class="crystals">
+        <div class="row">
 
+            <div class="col-lg12">
+
+                <div class="card card-primary" style="background-color:blue">
+                    <div class="card-heading">
+                        <h3 class="card-title text-center">Instructions</h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p> <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui a magni vel iste
+                            eaque
+                            dolorum laudantium quas, sed repudiandae molestias ipsam repellendus praesentium tempore,
+                            quisquam similique animi corrupti quasi!</small></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card-primary" style="background-color:blue">
+                    <div class="card-heading">
+                        <h3 class="card-title text-center">Target Score</h3>
+                    </div>
+                </div>
+                <div class="card-body text-center" id="targetScore">
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card-primary" style="background-color:blue">
+                    <div class="card-heading">
+                        <h3 class="card-title text-center" >Your Score</h3>
+                    </div>
+                </div>
+                <div class="card-body text-center" id="yourScore">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="card-primary" style="background-color:blue">
+                    <div class="card-heading">
+                        <h3 class="card-title text-center">crystal Section</h3>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <img src="images/amethyst.png" alt="" height="100px" width="100px" id="purple">
+                    <img src="images/images.jpg" alt="" height="100px" width="100px" id="red">
+                    <img src="images/download-1.jpg" alt="" height="100px" width="100px" id="yellow">
+                    <img src="images/images-1.jpg" alt="" height="100px" width="100px" id="blue">
+                </div>
+            </div>
+        </div>
+     </div>
+        <div class="row-6">
+            <div class="card-primary" style="background-color:blue">
+                <div class="card-heading">
+                    <h3 class="card-title text-center">Win Count</h3>
+                </div>
+            </div>
+            <div class="card-body text-center">0
+            </div>
+        </div>
+        <div class="row-6">
+            <div class="card-primary" style="background-color:blue">
+                <div class="card-heading">
+                    <h3 class="card-title text-center">Loss Count</h3>
+                </div>
+            </div>
+            <div class="card-body text-center">0
+            </div>
+        </div>
     </div>
 
-    <p id="previous"></p>
 
-    <p id="win"></p>
-    <p id="lost"></p>
-  
-    
+<script src="./javascript/game.js"></script>
+
+
+
+
 </body>
+
 </html>
