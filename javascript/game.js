@@ -47,11 +47,6 @@ var startGame = function() {
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
 
-    console.log("---------------------------------");
-    console.log("target Score:" + targetScore);
-    console.log("blue " + crystal.blue.value + '| red: ' + crystal.red.value + '| yellow: ' + crystal.yellow.value + 'purple: ' + crystal.purple.value);
-    console.log("----------------------------------");
-
 }
 var addValues = function(crystal){
     currentScore = currentScore + crystal.value;
@@ -61,13 +56,11 @@ var addValues = function(crystal){
 
     checkWin();
 
-    console.log('your score:' + currentScore);
 }
 var checkWin = function(){
 
     if(currentScore > targetScore) {
         alert('you lost');
-        console.log('you lost');
 
         lossCount++;
 
@@ -77,7 +70,6 @@ var checkWin = function(){
     }
     else if (currentScore === targetScore) {
         alert("congratulation! you won"); 
-        console.log('you win');
 
         winCount++;
 
