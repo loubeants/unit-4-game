@@ -34,7 +34,7 @@ var getRandom = function(min, max) {
 
 var startGame = function() {
 
-    var currentScore = 0;
+    currentScore = 0;
 
     targetScore = getRandom(19, 120);
 
@@ -56,9 +56,37 @@ var startGame = function() {
 var addValues = function(crystal){
     currentScore = currentScore + crystal.value;
 
+
+    $("#yourScore").html(currentScore);
+
+    checkWin();
+
     console.log('your score:' + currentScore);
 }
+var checkWin = function(){
 
+    if(currentScore > targetScore) {
+        alert('you lost');
+        console.log('you lost');
+
+        lossCount++;
+
+        $("#lossCount").html(lossCount);
+
+        startGame();
+    }
+    else if (currentScore === targetScore) {
+        alert("congratulation! you won"); 
+        console.log('you win');
+
+        winCount++;
+
+        $("#winCount").html(winCount);
+
+        startGame();
+
+    }
+}
 
 
 startGame();
